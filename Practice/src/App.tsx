@@ -1,5 +1,6 @@
 
 import Card from './components/Card'
+import { Routes, Route } from 'react-router-dom'
 
 
 const App = () => {
@@ -13,10 +14,14 @@ const App = () => {
 
     //   <div>this is second children</div>
     //   <Conditional isValid = {false}/>
-    <div className='w-screen h-screen flex flex-col gap-1 justify-center items-center'>
+    <Routes>
+    <Route path="/" element={<div className='w-screen h-screen flex flex-col gap-1 justify-center items-center'>
       <Card team= "A" />
       <Card team= "B"/>
-      </div>
+      </div>} />
+   
+  </Routes>
+    
 
     // <Reducer/>
     // <Form/>
